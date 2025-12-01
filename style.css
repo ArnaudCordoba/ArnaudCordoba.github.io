@@ -592,11 +592,7 @@ footer h2 {
         display: none; /* caché sur mobile */
     }
 
-    .menu-toggle {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-    }
+ 
 
     .dropdown-menu {
         display: flex;
@@ -661,4 +657,5 @@ footer h2 {
 
 }
 }
+
 

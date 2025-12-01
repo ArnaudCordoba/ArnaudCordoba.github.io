@@ -580,9 +580,85 @@ footer h2 {
 
 
 
-/* --- Responsive parcours section--- */
+/* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
-  .competence-card {
-    width: 80%;
-  }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        display: none; /* caché sur mobile */
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* TITRES */
+    h1, h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Texte */
+    p, ul {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* SECTIONS PROJETS */
+    .projet1, .projet2 {
+        flex-direction: column !important;
+        text-align: center;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .projet1-img, .projet2-img, .projet3-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .projet1-text, .projet2-text {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Cartes compétences */
+    .competence-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .competence-card {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* FOOTER */
+    .contact-info p,
+    .social-icons {
+        text-align: center;
+    }
+
+    footer {
+        padding: 25px 10px;
+    }
+
 }
+}
+

@@ -594,12 +594,7 @@ footer h2 {
 
  
 
-    .dropdown-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
+
 
     /* TITRES */
     h1, h2 {
@@ -657,5 +652,6 @@ footer h2 {
 
 }
 }
+
 
 

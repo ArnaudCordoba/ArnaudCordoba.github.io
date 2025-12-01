@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio - Arnaud Cordoba</title>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+
+		<!-- Barre de navigation -->
+		<header class="navbar">
+			<div class="logo">Arnaud CORDOBA</div>
+				
+			<div class="nav-right">
+				<nav class="nav-links" id="nav-links">
+					<a href="../main.html#accueil">Accueil</a>
+					<a href="../main.html#apropos">À propos</a>
+					<a href="#contact">Contact</a>
+				</nav>
+
+				<!-- Icône hamburger -->
+				<div class="menu-toggle" id="menu-toggle">
+					☰
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu mobile (apparait quand on clique sur ☰) -->
+		<div class="dropdown-menu" id="dropdown-menu">
+			<a href="../main.html#accueil">Accueil</a>
+			<a href="../main.html#apropos">À propos</a>
+			<a href="../main.html#parcours">Parcours universitaire</a>
+			<a href="exp/exp.html"  class="active-page">Experience professionnelle</a>
+			<a href="../project/project.html">Projets</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		
+		<!-- Section À propos -->
+		<section id="acceuil" class="section1">
+			<h2>Expérience professionnelle</h2>
+			<p>Dans cette page, je vais vous presenter les differentes experiences professionelle que j'ai eu dans ma vie, du debut de mes etudes jusqu'à aujourd'hui.</p>
+
+
+		</section>
+		
+		<section id="PC1" class="projet1">
+			<img src="PC1.jpg" alt="HS1" class="projet1-img">
+				<div class="projet1-text">
+				<h2>Stage BUT3 : Point Course</h2>
+				<ul>
+					<li>Entreprise de chronometrage automatisé</li>
+					<li>J'ai réalisé mon stage auprès de Yan Bud Scot le CGO de l'entreprise</li>
+					<li>Mon projet: coder une application de chronométrage connecté au reseau ATS pour une badgeuse RFID</li>
+					
+				</ul>
+
+			</div>
+			
+		</section>
+		
+				<section id="PC1" class="projet2">
+			
+				<div class="projet1-text">
+				<h2>Le projet</h2>
+				<ul>
+					<li>Application "RF Point course", codé sur android studio</li>
+					<li>Language utilisé: java</li>
+					<li>Mon projet: coder une application de chronométrage connecté au reseau ATS pour une badgeuse RFID</li>
+					
+				</ul>
+				<div class="competence-container">
+				
+
+					<div class="competence-card" >
+						<img src="JAVA.png" alt="logo JAVA" class="projet3-img">
+					</div>
+
+					<div class="competence-card">
+						<img src="AS.png" alt="logo JAVA" class="projet3-img">
+					</div>
+
+					<div class="competence-card">
+						<strong>implanter</strong>
+					</div>
+				</div>
+			</div>
+			<img src="PC2.jpg" alt="HS1" class="projet1-img">
+		</section>
+
+		
+
+  
+		<!-- Footer -->
+		<footer id="contact">
+			<h2>Contact</h2>
+			<div class="contact-info">
+				<p>📧 <a href="mailto:arnaud.cordoba@example.com">arnaud.cordoba@gmail.com</a></p>
+				<p>📞 <a href="tel:+33662871524">+33 6 62 87 15 24</a></p>
+			</div>
+
+			<div class="social-icons">
+				<a href="https://www.instagram.com/arnaud.crdb/?hl=fr" target="_blank">
+					<img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+				</a>
+				<a href=https://www.linkedin.com/in/arnaud-cordoba/" target="_blank">
+					<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+				</a>
+			</div>
+			<p class="footer-credit">© 2025 Arnaud Cordoba — Tous droits réservés</p>
+		</footer>
+
+		<script>
+			const toggle = document.getElementById('menu-toggle');
+			const dropdown = document.getElementById('dropdown-menu');
+
+			toggle.addEventListener('click', () => {
+				dropdown.classList.toggle('active');
+			});
+
+			// Fermer le menu quand on clique sur un lien
+			const links = dropdown.querySelectorAll('a');
+			links.forEach(link => {
+				link.addEventListener('click', () => {
+					dropdown.classList.remove('active');
+				});
+			});
+
+			// Fermer le menu si on clique ailleurs sur la page
+			document.addEventListener('click', (e) => {
+				if (!dropdown.contains(e.target) && !toggle.contains(e.target)) {
+					dropdown.classList.remove('active');
+				}
+			});
+		</script>
+
+	</body>
+</html>

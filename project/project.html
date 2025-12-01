@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio - Arnaud Cordoba</title>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+
+		<!-- Barre de navigation -->
+		<header class="navbar">
+			<div class="logo">Arnaud CORDOBA</div>
+				
+			<div class="nav-right">
+				<nav class="nav-links" id="nav-links">
+					<a href="../main.html#accueil">Accueil</a>
+					<a href="../main.html#apropos">À propos</a>
+					<a href="#contact">Contact</a>
+				</nav>
+
+				<!-- Icône hamburger -->
+				<div class="menu-toggle" id="menu-toggle">
+					☰
+				</div>
+			</div>
+		</header>
+
+		<!-- Menu mobile (apparait quand on clique sur ☰) -->
+		<div class="dropdown-menu" id="dropdown-menu">
+			<a href="../main.html#accueil">Accueil</a>
+			<a href="../main.html#apropos">À propos</a>
+			<a href="../main.html#parcours">Parcours universitaire</a>
+			<a href="../exp/exp.html">Experience professionnelle</a>
+			<a href="project.html" class="active-page">Projets</a>
+			<a href="#HS1" class="active-page2">Half Spider</a>
+			<a href="#RSP1" class="active-page2">Raspberry video surveillance</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		
+		<!-- Section À propos -->
+		<section id="acceuil" class="section1">
+			<h2>Projets Universitaires</h2>
+			<p>Dans cette page, je vais vous presenter tous les differents projets que j'ai pu réaliser lors de mes etudes</p>
+			<p>Chaque projet sera présenter avec des illustration, une description et les compétence exploité </p>
+
+
+		</section>
+		
+		<section id="HS1" class="projet1">
+			<img src="HS1.gif" alt="HS1" class="projet1-img">
+				<div class="projet1-text">
+				<h2>Le Half-Spider</h2>
+				<ul>
+					<li>Projet tutorés mené en total autonomie</li>
+					<li>robot araignée télécommandé en Bluetooth via un smartphone Android</li>
+				</ul>
+				<div class="competence-container">
+				
+
+					<div class="competence-card" >
+						<strong>Concevoir</strong>
+					</div>
+
+					<div class="competence-card">
+						<strong>Verifier</strong>
+					</div>
+
+					<div class="competence-card">
+						<strong>implanter</strong>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<section id="HS2" class="projet2">
+			
+				<div class="projet2-text">
+				<h4> L’exosquelette et les servomoteurs étaient fournis, mais tout le reste a été réalisé en totale autonomie : </h4>
+				<ul>
+					<li>Dimensionnement des composants (alimentation, régulation, protections) et de la batterie pour assurer autonomie et fiabilité</li>
+					<li>Conception complète de la carte électronique, intégrant un microcontrôleur STM32F303K8</li>
+					<li>Développement du code permettant à la carte de communiquer avec l’ensemble des modules :</li>
+					<ul>
+						<li>8 servomoteurs pour les mouvements</li>
+						<li>Module Bluetooth HC-06 pour la liaison avec le téléphone</li>
+						<li>Capteur à ultrasons pour la détection d’obstacles</li>
+					</ul>
+				</ul>
+
+			</div>
+			<img src="HS2.jpg" alt="HS1" class="projet2-img">
+			
+		</section>
+		
+		<section id="RSP1" class="projet1">
+			<img src="RSP.jpg" alt="HS1" class="projet1-img">
+				<div class="projet1-text">
+				<h2>Système de surveillance</h2>
+				<ul>
+					<li>Projet de situation d'aprentissage evolutive : individuel, mais orienté et tutorés par le professeur</li>
+					<li>Système de surveillance raspberry : camera controlé et visionné via reseaux sur un site HTML</li>
+				</ul>
+				<div class="competence-container">
+				
+
+					<div class="competence-card" >
+						<img src="AS.png" alt="logo JAVA" class="projet3-img">
+					</div>
+
+					<div class="competence-card">
+						<strong>Verifier</strong>
+					</div>
+
+					<div class="competence-card">
+						<strong>implanter</strong>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<section id="RSP2" class="projet2">
+			
+				<div class="projet2-text">
+				<h4> Réalisation de la partie logicielle permettant la mise en œuvre d’une box de surveillance à la l’aide :</h4>
+				<ul>
+					<li>d’une raspberry pi</li>
+					<li>d’une carte d’extension</li>
+					<li>et d’une carte "pan tilt" qui est composéé: </li>
+					<ul>
+						<li>d'une carte STM32</li>
+						<li>et une carte fille branché dessus qui recupere les GPIO pour gerer les servo moteurs de la caméra</li>
+					</ul>
+				</ul>
+
+			</div>
+			<img src="RSP2.gif" alt="RSP2" class="projet2-img">
+			
+		</section>
+		
+
+  
+		<!-- Footer -->
+		<footer id="contact">
+			<h2>Contact</h2>
+			<div class="contact-info">
+				<p>📧 <a href="mailto:arnaud.cordoba@example.com">arnaud.cordoba@gmail.com</a></p>
+				<p>📞 <a href="tel:+33662871524">+33 6 62 87 15 24</a></p>
+			</div>
+
+			<div class="social-icons">
+				<a href="https://www.instagram.com/arnaud.crdb/?hl=fr" target="_blank">
+					<img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+				</a>
+				<a href=https://www.linkedin.com/in/arnaud-cordoba/" target="_blank">
+					<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+				</a>
+			</div>
+			<p class="footer-credit">© 2025 Arnaud Cordoba — Tous droits réservés</p>
+		</footer>
+
+		<script>
+			const toggle = document.getElementById('menu-toggle');
+			const dropdown = document.getElementById('dropdown-menu');
+
+			toggle.addEventListener('click', () => {
+				dropdown.classList.toggle('active');
+			});
+
+			// Fermer le menu quand on clique sur un lien
+			const links = dropdown.querySelectorAll('a');
+			links.forEach(link => {
+				link.addEventListener('click', () => {
+					dropdown.classList.remove('active');
+				});
+			});
+
+			// Fermer le menu si on clique ailleurs sur la page
+			document.addEventListener('click', (e) => {
+				if (!dropdown.contains(e.target) && !toggle.contains(e.target)) {
+					dropdown.classList.remove('active');
+				}
+			});
+		</script>
+
+	</body>
+</html>

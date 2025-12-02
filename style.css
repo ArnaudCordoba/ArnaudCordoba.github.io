@@ -182,6 +182,7 @@
   margin-top: 10px;
   width: 75%;
   max-width: 350px;
+  text-align: center;
 }
 
 .hero-text .btn {
@@ -597,5 +598,6 @@ footer h2 {
 	  color: #2b2f48;
 	}
 }
+
 
 

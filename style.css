@@ -570,24 +570,32 @@ footer h2 {
 	  }
 	 
 	.section1 h2 {
-	  font-size: 28px;
-	  font-weight: 600;
+	  font-size: 38px;
+	  font-weight: 800;
 	  margin-bottom: 30px;
 	  color: #2b2f48;
 	}
 	 
 	.section2 h2 {
-	  font-size: 28px;
-	  font-weight: 600;
+	  font-size: 38px;
+	  font-weight: 800;
 	  margin-bottom: 30px;
 	  color: #2b2f48;
 	}
 	
 	.section3 h2 {
-	  font-size: 28px;
-	  font-weight: 600;
+	  font-size: 38px;
+	  font-weight: 800;
+	  margin-bottom: 30px;
+	  color: #2b2f48;
+	}
+	
+	.parcours-section h2 {
+	  font-size: 38px;
+	  font-weight: 800;
 	  margin-bottom: 30px;
 	  color: #2b2f48;
 	}
 }
+
 

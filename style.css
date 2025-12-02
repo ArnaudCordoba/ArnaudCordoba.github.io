@@ -565,4 +565,14 @@ footer h2 {
     display: none;
   }
 
-  .menu-toggle
+  .menu-toggle{
+	  
+  }
+ .section1 h2{
+	font-size: 15px;
+ }  
+ 
+  .section2 h2{
+	font-size: 15px;
+ }
+}

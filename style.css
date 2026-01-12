@@ -208,7 +208,7 @@
 
 .section1 {
   background: #f8f8f8;
-  padding: 100px 20px;
+  padding-bottom: 60px;
   text-align: center;
 
 }
@@ -216,7 +216,8 @@
 .section1 h2 {
   font-size: 48px;
   font-weight: 800;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  padding-top:60px;
   color: #2b2f48;
 }
 
@@ -227,10 +228,19 @@
   line-height: 1.6;
 }
 
+.section1 h3 {
+  font-size: 24px;
+  font-weight: 800;
+  padding-top:30px;
+  margin-bottom: 50px;
+  color: #2b2f48;
+}
+
 /* ========================= SECTION 11 ========================= */
 
 .section11 {
-  background: #f8f8f8;
+  background: #cfd3d6;
+  padding-top :20px;
   text-align: center;
   align-self: center;
 }
@@ -242,12 +252,7 @@
   color: #2b2f48;
 }
 
-.section1 h3 {
-  font-size: 24px;
-  font-weight: 800;
-  margin-bottom: 50px;
-  color: #2b2f48;
-}
+
 
 .section11 p {
   margin-left: 20px;
@@ -275,7 +280,7 @@ margin: 10px;
 
 .section2 {
   background-color: #cfd3d6;
-  padding: 100px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -401,7 +406,8 @@ margin: 10px;
 }
 
 .section3-img {
-  width: 350px;
+  max-width: 400px;
+  height:auto;
   border-radius: 10px;
 }
 

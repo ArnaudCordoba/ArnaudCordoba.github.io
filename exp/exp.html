@@ -32,7 +32,7 @@
 			<a href="../main.html#accueil">Accueil</a>
 			<a href="../main.html#apropos">À propos</a>
 			<a href="../main.html#parcours">Parcours universitaire</a>
-			<a href="exp/exp.html"  class="active-page">Experience professionnelle</a>
+			<a href="exp.html"  class="active-page">Experience professionnelle</a>
 			<a href="../project/project.html">Projets</a>
 			<a href="../project/competence.html">Competence</a>
 			<a href="#contact">Contact</a>
@@ -62,7 +62,7 @@
 			
 		</section>
 				
-		<section id="PC1" class="projet2">
+		<section id="PC2" class="projet2">
 			<div class="competence-container">			
 				<div class="competence-card" >
 					<img src="JAVA.png" alt="logo JAVA" class="projet3-img">
@@ -96,7 +96,7 @@
 		<footer id="contact">
 			<h2>Contact</h2>
 			<div class="contact-info">
-				<p>📧 <a href="mailto:arnaud.cordoba@example.com">arnaud.cordoba@gmail.com</a></p>
+				<p>📧 <a href="mailto:arnaud.cordoba@gmail.com">arnaud.cordoba@gmail.com</a></p>
 				<p>📞 <a href="tel:+33662871524">+33 6 62 87 15 24</a></p>
 			</div>
 
@@ -104,7 +104,7 @@
 				<a href="https://www.instagram.com/arnaud.crdb/?hl=fr" target="_blank">
 					<img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
 				</a>
-				<a href=https://www.linkedin.com/in/arnaud-cordoba/" target="_blank">
+				<a href="https://www.linkedin.com/in/arnaud-cordoba/" target="_blank">
 					<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
 				</a>
 			</div>
@@ -133,6 +133,23 @@
 					dropdown.classList.remove('active');
 				}
 			});
+		
+			// Reveal animation au scroll
+			const revealTargets = document.querySelectorAll(".parcours-card, .software-card, .competence-card, .section3-img, .projet1-img, .projet2-img, .section3-text, .projet1-text, .projet2-text");
+			revealTargets.forEach(el => el.classList.add("reveal"));
+			if ("IntersectionObserver" in window) {
+				const io = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("in-view");
+							io.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+				revealTargets.forEach(el => io.observe(el));
+			} else {
+				revealTargets.forEach(el => el.classList.add("in-view"));
+			}
 		</script>
 
 	</body>

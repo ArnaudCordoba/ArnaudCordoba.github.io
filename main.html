@@ -34,7 +34,7 @@
 			<a href="#parcours">Parcours universitaire</a>
 			<a href="exp/exp.html">Experience professionnelle</a>
 			<a href="project/project.html">Projets</a>	
-			<a href="../project/competence.html" >Competence</a>
+			<a href="project/competence.html" >Competence</a>
 			<a href="#contact">Contact</a>
 		</div>
 
@@ -101,7 +101,7 @@
 				</ul>
 
 			</div>
-			<img src="arnaud2.jpg" alt="Photo Arnaud" class="section3-img">
+			<img src="arnaud2.JPG" alt="Photo Arnaud" class="section3-img">
 		</section>
 		
 		<!-- Section Parcours universitaire -->
@@ -161,8 +161,8 @@
 		<section id="menu2" class="section1">
 			<h2>En Savoir encore PLUS</h2>
 			<ul>
-				<p><button class="btn-blue">Expérience professionnelle</button></p>
-				<p><a href="project/project.html"><p><button class="btn-blue">Projet universitaire</button></a></p>
+				<p><a href="exp/exp.html"><button class="btn-blue">Expérience professionnelle</button></a></p>
+				<p><a href="project/project.html"><button class="btn-blue">Projet universitaire</button></a></p>
 				<p><a href="#contact"><button class="btn-blue" >On reste en Contact ? 😉 	</button></a></p>
 			</ul>
 		</section>
@@ -220,6 +220,23 @@
 					dropdown.classList.remove('active');
 				}
 			});
+		
+			// Reveal animation au scroll
+			const revealTargets = document.querySelectorAll(".parcours-card, .software-card, .competence-card, .section3-img, .projet1-img, .projet2-img, .section3-text, .projet1-text, .projet2-text");
+			revealTargets.forEach(el => el.classList.add("reveal"));
+			if ("IntersectionObserver" in window) {
+				const io = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("in-view");
+							io.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+				revealTargets.forEach(el => io.observe(el));
+			} else {
+				revealTargets.forEach(el => el.classList.add("in-view"));
+			}
 		</script>
 
 	</body>
